@@ -1,0 +1,1 @@
+This is for any OS scripting(game scripts can stay with games)

@@ -1,0 +1,1 @@
+THis is the main application and is what the user will see when the system is turned on
