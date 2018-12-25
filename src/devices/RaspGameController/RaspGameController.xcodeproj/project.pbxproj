@@ -1,0 +1,568 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D305A58821D0E3CA00CC2569 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D305A58721D0E3CA00CC2569 /* AppDelegate.swift */; };
+		D305A58A21D0E3CA00CC2569 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D305A58921D0E3CA00CC2569 /* ViewController.swift */; };
+		D305A58F21D0E3CF00CC2569 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D305A58E21D0E3CF00CC2569 /* Assets.xcassets */; };
+		D305A59D21D0E3CF00CC2569 /* RaspGameControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D305A59C21D0E3CF00CC2569 /* RaspGameControllerTests.swift */; };
+		D305A5A821D0E3CF00CC2569 /* RaspGameControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D305A5A721D0E3CF00CC2569 /* RaspGameControllerUITests.swift */; };
+		D305A5B621D1D83700CC2569 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D305A5B521D1D83700CC2569 /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D305A59921D0E3CF00CC2569 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D305A57C21D0E3CA00CC2569 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D305A58321D0E3CA00CC2569;
+			remoteInfo = RaspGameController;
+		};
+		D305A5A421D0E3CF00CC2569 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D305A57C21D0E3CA00CC2569 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D305A58321D0E3CA00CC2569;
+			remoteInfo = RaspGameController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D305A58421D0E3CA00CC2569 /* RaspGameController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RaspGameController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D305A58721D0E3CA00CC2569 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D305A58921D0E3CA00CC2569 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D305A58E21D0E3CF00CC2569 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D305A59321D0E3CF00CC2569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D305A59821D0E3CF00CC2569 /* RaspGameControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaspGameControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D305A59C21D0E3CF00CC2569 /* RaspGameControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspGameControllerTests.swift; sourceTree = "<group>"; };
+		D305A59E21D0E3CF00CC2569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D305A5A321D0E3CF00CC2569 /* RaspGameControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaspGameControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D305A5A721D0E3CF00CC2569 /* RaspGameControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspGameControllerUITests.swift; sourceTree = "<group>"; };
+		D305A5A921D0E3CF00CC2569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D305A5B521D1D83700CC2569 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D305A58121D0E3CA00CC2569 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D305A59521D0E3CF00CC2569 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D305A5A021D0E3CF00CC2569 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D305A57B21D0E3CA00CC2569 = {
+			isa = PBXGroup;
+			children = (
+				D305A5B521D1D83700CC2569 /* Podfile */,
+				D305A58621D0E3CA00CC2569 /* RaspGameController */,
+				D305A59B21D0E3CF00CC2569 /* RaspGameControllerTests */,
+				D305A5A621D0E3CF00CC2569 /* RaspGameControllerUITests */,
+				D305A58521D0E3CA00CC2569 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D305A58521D0E3CA00CC2569 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D305A58421D0E3CA00CC2569 /* RaspGameController.app */,
+				D305A59821D0E3CF00CC2569 /* RaspGameControllerTests.xctest */,
+				D305A5A321D0E3CF00CC2569 /* RaspGameControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D305A58621D0E3CA00CC2569 /* RaspGameController */ = {
+			isa = PBXGroup;
+			children = (
+				D305A58721D0E3CA00CC2569 /* AppDelegate.swift */,
+				D305A58921D0E3CA00CC2569 /* ViewController.swift */,
+				D305A58E21D0E3CF00CC2569 /* Assets.xcassets */,
+				D305A59321D0E3CF00CC2569 /* Info.plist */,
+			);
+			path = RaspGameController;
+			sourceTree = "<group>";
+		};
+		D305A59B21D0E3CF00CC2569 /* RaspGameControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D305A59C21D0E3CF00CC2569 /* RaspGameControllerTests.swift */,
+				D305A59E21D0E3CF00CC2569 /* Info.plist */,
+			);
+			path = RaspGameControllerTests;
+			sourceTree = "<group>";
+		};
+		D305A5A621D0E3CF00CC2569 /* RaspGameControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D305A5A721D0E3CF00CC2569 /* RaspGameControllerUITests.swift */,
+				D305A5A921D0E3CF00CC2569 /* Info.plist */,
+			);
+			path = RaspGameControllerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D305A58321D0E3CA00CC2569 /* RaspGameController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D305A5AC21D0E3CF00CC2569 /* Build configuration list for PBXNativeTarget "RaspGameController" */;
+			buildPhases = (
+				D305A58021D0E3CA00CC2569 /* Sources */,
+				D305A58121D0E3CA00CC2569 /* Frameworks */,
+				D305A58221D0E3CA00CC2569 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RaspGameController;
+			productName = RaspGameController;
+			productReference = D305A58421D0E3CA00CC2569 /* RaspGameController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D305A59721D0E3CF00CC2569 /* RaspGameControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D305A5AF21D0E3CF00CC2569 /* Build configuration list for PBXNativeTarget "RaspGameControllerTests" */;
+			buildPhases = (
+				D305A59421D0E3CF00CC2569 /* Sources */,
+				D305A59521D0E3CF00CC2569 /* Frameworks */,
+				D305A59621D0E3CF00CC2569 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D305A59A21D0E3CF00CC2569 /* PBXTargetDependency */,
+			);
+			name = RaspGameControllerTests;
+			productName = RaspGameControllerTests;
+			productReference = D305A59821D0E3CF00CC2569 /* RaspGameControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D305A5A221D0E3CF00CC2569 /* RaspGameControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D305A5B221D0E3CF00CC2569 /* Build configuration list for PBXNativeTarget "RaspGameControllerUITests" */;
+			buildPhases = (
+				D305A59F21D0E3CF00CC2569 /* Sources */,
+				D305A5A021D0E3CF00CC2569 /* Frameworks */,
+				D305A5A121D0E3CF00CC2569 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D305A5A521D0E3CF00CC2569 /* PBXTargetDependency */,
+			);
+			name = RaspGameControllerUITests;
+			productName = RaspGameControllerUITests;
+			productReference = D305A5A321D0E3CF00CC2569 /* RaspGameControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D305A57C21D0E3CA00CC2569 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Edward Hubbard";
+				TargetAttributes = {
+					D305A58321D0E3CA00CC2569 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					D305A59721D0E3CF00CC2569 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D305A58321D0E3CA00CC2569;
+					};
+					D305A5A221D0E3CF00CC2569 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = D305A58321D0E3CA00CC2569;
+					};
+				};
+			};
+			buildConfigurationList = D305A57F21D0E3CA00CC2569 /* Build configuration list for PBXProject "RaspGameController" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D305A57B21D0E3CA00CC2569;
+			productRefGroup = D305A58521D0E3CA00CC2569 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D305A58321D0E3CA00CC2569 /* RaspGameController */,
+				D305A59721D0E3CF00CC2569 /* RaspGameControllerTests */,
+				D305A5A221D0E3CF00CC2569 /* RaspGameControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D305A58221D0E3CA00CC2569 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D305A5B621D1D83700CC2569 /* Podfile in Resources */,
+				D305A58F21D0E3CF00CC2569 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D305A59621D0E3CF00CC2569 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D305A5A121D0E3CF00CC2569 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D305A58021D0E3CA00CC2569 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D305A58A21D0E3CA00CC2569 /* ViewController.swift in Sources */,
+				D305A58821D0E3CA00CC2569 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D305A59421D0E3CF00CC2569 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D305A59D21D0E3CF00CC2569 /* RaspGameControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D305A59F21D0E3CF00CC2569 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D305A5A821D0E3CF00CC2569 /* RaspGameControllerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D305A59A21D0E3CF00CC2569 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D305A58321D0E3CA00CC2569 /* RaspGameController */;
+			targetProxy = D305A59921D0E3CF00CC2569 /* PBXContainerItemProxy */;
+		};
+		D305A5A521D0E3CF00CC2569 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D305A58321D0E3CA00CC2569 /* RaspGameController */;
+			targetProxy = D305A5A421D0E3CF00CC2569 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D305A5AA21D0E3CF00CC2569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D305A5AB21D0E3CF00CC2569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D305A5AD21D0E3CF00CC2569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9U5B4894Z5;
+				INFOPLIST_FILE = RaspGameController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EdwardHubbard.RaspGameController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D305A5AE21D0E3CF00CC2569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9U5B4894Z5;
+				INFOPLIST_FILE = RaspGameController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EdwardHubbard.RaspGameController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D305A5B021D0E3CF00CC2569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9U5B4894Z5;
+				INFOPLIST_FILE = RaspGameControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EdwardHubbard.RaspGameControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaspGameController.app/RaspGameController";
+			};
+			name = Debug;
+		};
+		D305A5B121D0E3CF00CC2569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9U5B4894Z5;
+				INFOPLIST_FILE = RaspGameControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EdwardHubbard.RaspGameControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RaspGameController.app/RaspGameController";
+			};
+			name = Release;
+		};
+		D305A5B321D0E3CF00CC2569 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9U5B4894Z5;
+				INFOPLIST_FILE = RaspGameControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EdwardHubbard.RaspGameControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RaspGameController;
+			};
+			name = Debug;
+		};
+		D305A5B421D0E3CF00CC2569 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9U5B4894Z5;
+				INFOPLIST_FILE = RaspGameControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = EdwardHubbard.RaspGameControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RaspGameController;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D305A57F21D0E3CA00CC2569 /* Build configuration list for PBXProject "RaspGameController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D305A5AA21D0E3CF00CC2569 /* Debug */,
+				D305A5AB21D0E3CF00CC2569 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D305A5AC21D0E3CF00CC2569 /* Build configuration list for PBXNativeTarget "RaspGameController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D305A5AD21D0E3CF00CC2569 /* Debug */,
+				D305A5AE21D0E3CF00CC2569 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D305A5AF21D0E3CF00CC2569 /* Build configuration list for PBXNativeTarget "RaspGameControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D305A5B021D0E3CF00CC2569 /* Debug */,
+				D305A5B121D0E3CF00CC2569 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D305A5B221D0E3CF00CC2569 /* Build configuration list for PBXNativeTarget "RaspGameControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D305A5B321D0E3CF00CC2569 /* Debug */,
+				D305A5B421D0E3CF00CC2569 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D305A57C21D0E3CA00CC2569 /* Project object */;
+}
