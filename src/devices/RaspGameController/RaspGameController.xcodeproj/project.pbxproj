@@ -13,6 +13,7 @@
 		D305A59D21D0E3CF00CC2569 /* RaspGameControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D305A59C21D0E3CF00CC2569 /* RaspGameControllerTests.swift */; };
 		D305A5A821D0E3CF00CC2569 /* RaspGameControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D305A5A721D0E3CF00CC2569 /* RaspGameControllerUITests.swift */; };
 		D305A5B621D1D83700CC2569 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D305A5B521D1D83700CC2569 /* Podfile */; };
+		D305A5B821D1F56500CC2569 /* AccessoryDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D305A5B721D1F56500CC2569 /* AccessoryDetector.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		D305A5A721D0E3CF00CC2569 /* RaspGameControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspGameControllerUITests.swift; sourceTree = "<group>"; };
 		D305A5A921D0E3CF00CC2569 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D305A5B521D1D83700CC2569 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		D305A5B721D1F56500CC2569 /* AccessoryDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryDetector.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				D305A58721D0E3CA00CC2569 /* AppDelegate.swift */,
 				D305A58921D0E3CA00CC2569 /* ViewController.swift */,
+				D305A5B721D1F56500CC2569 /* AccessoryDetector.swift */,
 				D305A58E21D0E3CF00CC2569 /* Assets.xcassets */,
 				D305A59321D0E3CF00CC2569 /* Info.plist */,
 			);
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D305A58A21D0E3CA00CC2569 /* ViewController.swift in Sources */,
+				D305A5B821D1F56500CC2569 /* AccessoryDetector.swift in Sources */,
 				D305A58821D0E3CA00CC2569 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
