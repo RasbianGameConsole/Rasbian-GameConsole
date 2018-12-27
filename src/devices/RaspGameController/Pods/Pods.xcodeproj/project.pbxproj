@@ -1,0 +1,1210 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02CB9EDB7F6D7B1B6FA0119E732F5ADF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFB269A51285595117E453FBD9D4B08 /* Foundation.framework */; };
+		09DCAE72CADB3D5CDAEE45447554D05C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA20AC65B02096482DC87BF0D7E3A553 /* Security.framework */; };
+		276F082DA0A032AB6F2998B3A8E2FA96 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FEEA08AEA960344DF216F0C66CEECC20 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		30169A0026017D898DAC180CC3218F79 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F75CA10633C25A7978659D4A0677BDC6 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		46B0AA30D7D224DD049414F0E38AE008 /* Pods-RaspGameController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD1CBE1C93E1754CA3D1F2A60CB9B9C /* Pods-RaspGameController-dummy.m */; };
+		4EB100FF9229539CA4094551779BF2BE /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A24D5284189E5E4CB6B699F5672D536A /* CocoaAsyncSocket-dummy.m */; };
+		56BDE1A4F1F6B17852BE1777028727AA /* Pods-RaspGameController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0B77C7F9F98980B2BB5CC4B0B55480C /* Pods-RaspGameController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6941F0AB33237ADB596360C1CB28CAC0 /* CocoaMQTTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE5847EBD3EBDF71B998F819B04FD77 /* CocoaMQTTMessage.swift */; };
+		736463C7BAEC936E2EFB4435AEB93DFA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C233C24FCB81D9F53CFDC8C1EBC06A /* CFNetwork.framework */; };
+		7CAAC56C2AD1DC6E584611FE8336DCC8 /* Pods-RaspGameControllerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D5425FA950A890843FBA4E2A539E648 /* Pods-RaspGameControllerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CB6781C979487AE7C3F03403E68A892 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFB269A51285595117E453FBD9D4B08 /* Foundation.framework */; };
+		84D92FC60D98C077AB3A6D56AEBE8FEB /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 76B7BF8217CF2C2517D90B0B3A88D623 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8644F2D6E29FF585868280E1F7BC3B29 /* CocoaMQTTFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131A0349B1C3B2FEDF1EC273AD473875 /* CocoaMQTTFrame.swift */; };
+		8BD8F2D9A4AA1DAE1B6BF161AC3B5DBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFB269A51285595117E453FBD9D4B08 /* Foundation.framework */; };
+		8D3AFFD9455296A0F86C0A4F8A4F15A6 /* CocoaMQTT-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A118F4845D10ABA068D4CA64F970F269 /* CocoaMQTT-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9087D4FF67472BBFCD8A70F7703A45F7 /* Pods-RaspGameControllerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0499C4BBABD9358923ED0A2095E4BAC /* Pods-RaspGameControllerTests-dummy.m */; };
+		92C2A4D6C9CBB3F702D56959F5A9C9A6 /* Pods-RaspGameControllerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B5F08AAFBCE49F1B4F847E7B248A17 /* Pods-RaspGameControllerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		946B8DE90A7C6B3872C82AA2AF240118 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = CC962E1827F63753A89BD0FA0B18836C /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96369808255736A8D2728D108B5F2295 /* CocoaMQTT-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6AD96EA341ACAD3D975E3CB89C5A40 /* CocoaMQTT-dummy.m */; };
+		AC166C66311BCAAAD1D9289A80E51CCF /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 99153AB0F808B6D38369576BC24932E1 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C28F8A915B73CFA4338CD73688BDBFB1 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91BA6F6CCD385509DC9FF3B1ACE3E309 /* CocoaAsyncSocket.framework */; };
+		C9DCA1C1225A5200DCFC358CC5880619 /* CocoaMQTT.h in Headers */ = {isa = PBXBuildFile; fileRef = 34DDC934A3F7E4B3CDD0D5B42BC56468 /* CocoaMQTT.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD84A9C5322FC90407188430A32B8F5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFB269A51285595117E453FBD9D4B08 /* Foundation.framework */; };
+		E4759585DA56B2C5DCF3D552059DE27B /* CocoaMQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4DCC7C10BF6ABE4595FECEF73905D24 /* CocoaMQTT.swift */; };
+		EC0D4CB436126D7BBC668F58440EE73F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FFB269A51285595117E453FBD9D4B08 /* Foundation.framework */; };
+		FACC4E3C25E6B3FD33DAD517B7DB0426 /* Pods-RaspGameControllerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF07492E26D4CF586C560A2C06BB3F8 /* Pods-RaspGameControllerUITests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14D7E4670AED4698489D9DB13A29D516 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE9095FD14D1932558DDD6BDF24B89BD;
+			remoteInfo = "Pods-RaspGameController";
+		};
+		3679D20BC6F02865EDD7199AFD4B95B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B683D6AC08CADDB3574C680F1A6DC944;
+			remoteInfo = CocoaMQTT;
+		};
+		9BE7F7837C9D5700210DF5467DDD061F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB9F16A11CCB7B75DFD4C14783C83019;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		CD9C470C4866B7813C2A301DF85A346A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE9095FD14D1932558DDD6BDF24B89BD;
+			remoteInfo = "Pods-RaspGameController";
+		};
+		E13BAC780580FA85005A89EDBD72836C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB9F16A11CCB7B75DFD4C14783C83019;
+			remoteInfo = CocoaAsyncSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A5A88538C82A665D88D2484F820120 /* Pods-RaspGameControllerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RaspGameControllerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		05F862A98206CB22DB938C2ECF252D6C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10C233C24FCB81D9F53CFDC8C1EBC06A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		131A0349B1C3B2FEDF1EC273AD473875 /* CocoaMQTTFrame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTFrame.swift; path = Source/CocoaMQTTFrame.swift; sourceTree = "<group>"; };
+		2315C54A267DA29C62E9C753ACC495C9 /* Pods-RaspGameController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RaspGameController.release.xcconfig"; sourceTree = "<group>"; };
+		24A96E6B3C55426E1AC772026C09958C /* Pods-RaspGameControllerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RaspGameControllerUITests-frameworks.sh"; sourceTree = "<group>"; };
+		29339ED965DECDB56CBCD460A38C846B /* CocoaMQTT.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaMQTT.xcconfig; sourceTree = "<group>"; };
+		2D5425FA950A890843FBA4E2A539E648 /* Pods-RaspGameControllerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RaspGameControllerUITests-umbrella.h"; sourceTree = "<group>"; };
+		2E649F8F490CE0B88421A3A6AE38BEA3 /* Pods_RaspGameController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RaspGameController.framework; path = "Pods-RaspGameController.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34DDC934A3F7E4B3CDD0D5B42BC56468 /* CocoaMQTT.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CocoaMQTT.h; path = Source/CocoaMQTT.h; sourceTree = "<group>"; };
+		36864F8FFFB92E1F8AFD82D6C56263B8 /* Pods-RaspGameControllerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RaspGameControllerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		381339F758FF1C3276176BCC94140D40 /* CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.xcconfig; sourceTree = "<group>"; };
+		3929A737E4069167F25B60D67134BAF7 /* Pods-RaspGameControllerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RaspGameControllerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3B665C98B5F72460C8C77FDE80AC4B81 /* Pods-RaspGameControllerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RaspGameControllerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3CB65575E3A4229525A94FC48E9F09FD /* Pods-RaspGameController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RaspGameController.debug.xcconfig"; sourceTree = "<group>"; };
+		3F68B3FA79BF6BC46D80E5783056E9C3 /* Pods-RaspGameController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RaspGameController-acknowledgements.plist"; sourceTree = "<group>"; };
+		3FFB269A51285595117E453FBD9D4B08 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		553F218564517C1E2ADD31203775C75F /* Pods-RaspGameController-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RaspGameController-resources.sh"; sourceTree = "<group>"; };
+		57B5F08AAFBCE49F1B4F847E7B248A17 /* Pods-RaspGameControllerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RaspGameControllerTests-umbrella.h"; sourceTree = "<group>"; };
+		5FE5847EBD3EBDF71B998F819B04FD77 /* CocoaMQTTMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTTMessage.swift; path = Source/CocoaMQTTMessage.swift; sourceTree = "<group>"; };
+		60A37F73C8E37D7DD1C07AFB24F90BFB /* Pods_RaspGameControllerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RaspGameControllerTests.framework; path = "Pods-RaspGameControllerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62BD9CBB56CF41298903EADC59B6F6C7 /* Pods_RaspGameControllerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RaspGameControllerUITests.framework; path = "Pods-RaspGameControllerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62C1F40126CA252ED5FAAABA1EE3458F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66053F831287B707379C4FA5EBF7EFF8 /* Pods-RaspGameControllerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RaspGameControllerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6A44B5AB127D1933F634D12E76F55B84 /* Pods-RaspGameControllerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RaspGameControllerTests-frameworks.sh"; sourceTree = "<group>"; };
+		6ABF468069B429A4ABDFB35EF126B069 /* CocoaMQTT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaMQTT.framework; path = CocoaMQTT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E845B252BAF4310ECF9A8F2A2BBF3EB /* Pods-RaspGameControllerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RaspGameControllerTests.release.xcconfig"; sourceTree = "<group>"; };
+		6ED55EA21C092FFD03FBCC44D07B8E39 /* Pods-RaspGameControllerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RaspGameControllerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6FB6296374ADF9654C94BF0EF81E5EE7 /* Pods-RaspGameControllerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RaspGameControllerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		736F774EE6B44A7569E917169A9C8753 /* Pods-RaspGameController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RaspGameController.modulemap"; sourceTree = "<group>"; };
+		76B7BF8217CF2C2517D90B0B3A88D623 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		7C6AD96EA341ACAD3D975E3CB89C5A40 /* CocoaMQTT-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaMQTT-dummy.m"; sourceTree = "<group>"; };
+		8E16377E8EEE557AE434431A5A352E65 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91BA6F6CCD385509DC9FF3B1ACE3E309 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99153AB0F808B6D38369576BC24932E1 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		9C64479BC6C83CFFE32D11FB9FCF17B5 /* Pods-RaspGameController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RaspGameController-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9CF07492E26D4CF586C560A2C06BB3F8 /* Pods-RaspGameControllerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RaspGameControllerUITests-dummy.m"; sourceTree = "<group>"; };
+		A0499C4BBABD9358923ED0A2095E4BAC /* Pods-RaspGameControllerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RaspGameControllerTests-dummy.m"; sourceTree = "<group>"; };
+		A118F4845D10ABA068D4CA64F970F269 /* CocoaMQTT-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaMQTT-umbrella.h"; sourceTree = "<group>"; };
+		A24D5284189E5E4CB6B699F5672D536A /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		A365BED2A0854DC896D9683B4C38C3F1 /* Pods-RaspGameControllerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RaspGameControllerUITests.modulemap"; sourceTree = "<group>"; };
+		AA20AC65B02096482DC87BF0D7E3A553 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		AA755F3487E03ED4E082ADA8A3E800FA /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		B2317A00E7FA6263510EA5D940AA0596 /* Pods-RaspGameController-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RaspGameController-frameworks.sh"; sourceTree = "<group>"; };
+		B4885C967E1970FC8D1938D177A5031A /* CocoaMQTT-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaMQTT-prefix.pch"; sourceTree = "<group>"; };
+		B6B906FAFFAAF6C6B4AC5A7A2C3E328A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6FB2442561075E97C0F8FFA76808DB /* Pods-RaspGameControllerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RaspGameControllerTests-resources.sh"; sourceTree = "<group>"; };
+		BDF4882BE1D713228207AE5614A5E8B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C65ABFC9E56E3A903C60A02753B2C1E7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB98157D89A331E1A2D61791F1DBB0F2 /* Pods-RaspGameControllerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RaspGameControllerTests.modulemap"; sourceTree = "<group>"; };
+		CC962E1827F63753A89BD0FA0B18836C /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		CFF3EA652DB80A8865177926A82C1F23 /* Pods-RaspGameControllerUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RaspGameControllerUITests-resources.sh"; sourceTree = "<group>"; };
+		D4DCC7C10BF6ABE4595FECEF73905D24 /* CocoaMQTT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CocoaMQTT.swift; path = Source/CocoaMQTT.swift; sourceTree = "<group>"; };
+		D8A30D19963F719CBE776E2FE29826FB /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		F0B77C7F9F98980B2BB5CC4B0B55480C /* Pods-RaspGameController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RaspGameController-umbrella.h"; sourceTree = "<group>"; };
+		F75CA10633C25A7978659D4A0677BDC6 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		FB4C5DDF12832C92F1BEDAEA6CDAA788 /* CocoaMQTT.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaMQTT.modulemap; sourceTree = "<group>"; };
+		FDD1CBE1C93E1754CA3D1F2A60CB9B9C /* Pods-RaspGameController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RaspGameController-dummy.m"; sourceTree = "<group>"; };
+		FEEA08AEA960344DF216F0C66CEECC20 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C2B25DACF933765E75AC500E56B6822 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BD8F2D9A4AA1DAE1B6BF161AC3B5DBF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42FB5D04B2B93D6D7EE3F3055F74FDDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CB6781C979487AE7C3F03403E68A892 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73EDCCE02D9536A6E6AD00154B166BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				736463C7BAEC936E2EFB4435AEB93DFA /* CFNetwork.framework in Frameworks */,
+				02CB9EDB7F6D7B1B6FA0119E732F5ADF /* Foundation.framework in Frameworks */,
+				09DCAE72CADB3D5CDAEE45447554D05C /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B416B84FFA812F8239106CC4FA43593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C28F8A915B73CFA4338CD73688BDBFB1 /* CocoaAsyncSocket.framework in Frameworks */,
+				DD84A9C5322FC90407188430A32B8F5F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C863242CE8BDC482042487CB305FA522 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC0D4CB436126D7BBC668F58440EE73F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		059C46781E8CE7AD08ED97EC223F5412 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA755F3487E03ED4E082ADA8A3E800FA /* CocoaAsyncSocket.modulemap */,
+				381339F758FF1C3276176BCC94140D40 /* CocoaAsyncSocket.xcconfig */,
+				A24D5284189E5E4CB6B699F5672D536A /* CocoaAsyncSocket-dummy.m */,
+				D8A30D19963F719CBE776E2FE29826FB /* CocoaAsyncSocket-prefix.pch */,
+				FEEA08AEA960344DF216F0C66CEECC20 /* CocoaAsyncSocket-umbrella.h */,
+				62C1F40126CA252ED5FAAABA1EE3458F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
+			sourceTree = "<group>";
+		};
+		07E650B46517CF0B36A55CFCFC73603B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB4C5DDF12832C92F1BEDAEA6CDAA788 /* CocoaMQTT.modulemap */,
+				29339ED965DECDB56CBCD460A38C846B /* CocoaMQTT.xcconfig */,
+				7C6AD96EA341ACAD3D975E3CB89C5A40 /* CocoaMQTT-dummy.m */,
+				B4885C967E1970FC8D1938D177A5031A /* CocoaMQTT-prefix.pch */,
+				A118F4845D10ABA068D4CA64F970F269 /* CocoaMQTT-umbrella.h */,
+				C65ABFC9E56E3A903C60A02753B2C1E7 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaMQTT";
+			sourceTree = "<group>";
+		};
+		17D5ACE7CDB3B48D9FEAE83E0D1A3A14 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				10C233C24FCB81D9F53CFDC8C1EBC06A /* CFNetwork.framework */,
+				3FFB269A51285595117E453FBD9D4B08 /* Foundation.framework */,
+				AA20AC65B02096482DC87BF0D7E3A553 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2757D3C367439FD4FCB56A832FF93896 /* Pods-RaspGameController */ = {
+			isa = PBXGroup;
+			children = (
+				BDF4882BE1D713228207AE5614A5E8B5 /* Info.plist */,
+				736F774EE6B44A7569E917169A9C8753 /* Pods-RaspGameController.modulemap */,
+				9C64479BC6C83CFFE32D11FB9FCF17B5 /* Pods-RaspGameController-acknowledgements.markdown */,
+				3F68B3FA79BF6BC46D80E5783056E9C3 /* Pods-RaspGameController-acknowledgements.plist */,
+				FDD1CBE1C93E1754CA3D1F2A60CB9B9C /* Pods-RaspGameController-dummy.m */,
+				B2317A00E7FA6263510EA5D940AA0596 /* Pods-RaspGameController-frameworks.sh */,
+				553F218564517C1E2ADD31203775C75F /* Pods-RaspGameController-resources.sh */,
+				F0B77C7F9F98980B2BB5CC4B0B55480C /* Pods-RaspGameController-umbrella.h */,
+				3CB65575E3A4229525A94FC48E9F09FD /* Pods-RaspGameController.debug.xcconfig */,
+				2315C54A267DA29C62E9C753ACC495C9 /* Pods-RaspGameController.release.xcconfig */,
+			);
+			name = "Pods-RaspGameController";
+			path = "Target Support Files/Pods-RaspGameController";
+			sourceTree = "<group>";
+		};
+		2EE79E153B729DBA2A9FE43DFE40222D /* Pods-RaspGameControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				05F862A98206CB22DB938C2ECF252D6C /* Info.plist */,
+				CB98157D89A331E1A2D61791F1DBB0F2 /* Pods-RaspGameControllerTests.modulemap */,
+				66053F831287B707379C4FA5EBF7EFF8 /* Pods-RaspGameControllerTests-acknowledgements.markdown */,
+				3929A737E4069167F25B60D67134BAF7 /* Pods-RaspGameControllerTests-acknowledgements.plist */,
+				A0499C4BBABD9358923ED0A2095E4BAC /* Pods-RaspGameControllerTests-dummy.m */,
+				6A44B5AB127D1933F634D12E76F55B84 /* Pods-RaspGameControllerTests-frameworks.sh */,
+				BA6FB2442561075E97C0F8FFA76808DB /* Pods-RaspGameControllerTests-resources.sh */,
+				57B5F08AAFBCE49F1B4F847E7B248A17 /* Pods-RaspGameControllerTests-umbrella.h */,
+				6FB6296374ADF9654C94BF0EF81E5EE7 /* Pods-RaspGameControllerTests.debug.xcconfig */,
+				6E845B252BAF4310ECF9A8F2A2BBF3EB /* Pods-RaspGameControllerTests.release.xcconfig */,
+			);
+			name = "Pods-RaspGameControllerTests";
+			path = "Target Support Files/Pods-RaspGameControllerTests";
+			sourceTree = "<group>";
+		};
+		313A43EA0F5FD9CE8A0C89090C273488 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				76B7BF8217CF2C2517D90B0B3A88D623 /* GCDAsyncSocket.h */,
+				99153AB0F808B6D38369576BC24932E1 /* GCDAsyncSocket.m */,
+				CC962E1827F63753A89BD0FA0B18836C /* GCDAsyncUdpSocket.h */,
+				F75CA10633C25A7978659D4A0677BDC6 /* GCDAsyncUdpSocket.m */,
+				059C46781E8CE7AD08ED97EC223F5412 /* Support Files */,
+			);
+			name = CocoaAsyncSocket;
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		4B0C74CF85108E32B1802417963FF472 /* Pods-RaspGameControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B6B906FAFFAAF6C6B4AC5A7A2C3E328A /* Info.plist */,
+				A365BED2A0854DC896D9683B4C38C3F1 /* Pods-RaspGameControllerUITests.modulemap */,
+				00A5A88538C82A665D88D2484F820120 /* Pods-RaspGameControllerUITests-acknowledgements.markdown */,
+				6ED55EA21C092FFD03FBCC44D07B8E39 /* Pods-RaspGameControllerUITests-acknowledgements.plist */,
+				9CF07492E26D4CF586C560A2C06BB3F8 /* Pods-RaspGameControllerUITests-dummy.m */,
+				24A96E6B3C55426E1AC772026C09958C /* Pods-RaspGameControllerUITests-frameworks.sh */,
+				CFF3EA652DB80A8865177926A82C1F23 /* Pods-RaspGameControllerUITests-resources.sh */,
+				2D5425FA950A890843FBA4E2A539E648 /* Pods-RaspGameControllerUITests-umbrella.h */,
+				36864F8FFFB92E1F8AFD82D6C56263B8 /* Pods-RaspGameControllerUITests.debug.xcconfig */,
+				3B665C98B5F72460C8C77FDE80AC4B81 /* Pods-RaspGameControllerUITests.release.xcconfig */,
+			);
+			name = "Pods-RaspGameControllerUITests";
+			path = "Target Support Files/Pods-RaspGameControllerUITests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				E57D8BB42B7367E2EA1AB4BAF61E5D44 /* Frameworks */,
+				A0AEF9AE44240C35D624873A21960F1A /* Pods */,
+				CF9823D7A05F0C9A5DDCB95D374362DC /* Products */,
+				DCDDFAC572FD429CA5B7433FFAA3A308 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A0AEF9AE44240C35D624873A21960F1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				313A43EA0F5FD9CE8A0C89090C273488 /* CocoaAsyncSocket */,
+				E2A81DCD253140B4027325F4CBBCC82E /* CocoaMQTT */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CF9823D7A05F0C9A5DDCB95D374362DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E16377E8EEE557AE434431A5A352E65 /* CocoaAsyncSocket.framework */,
+				6ABF468069B429A4ABDFB35EF126B069 /* CocoaMQTT.framework */,
+				2E649F8F490CE0B88421A3A6AE38BEA3 /* Pods_RaspGameController.framework */,
+				60A37F73C8E37D7DD1C07AFB24F90BFB /* Pods_RaspGameControllerTests.framework */,
+				62BD9CBB56CF41298903EADC59B6F6C7 /* Pods_RaspGameControllerUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCDDFAC572FD429CA5B7433FFAA3A308 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2757D3C367439FD4FCB56A832FF93896 /* Pods-RaspGameController */,
+				2EE79E153B729DBA2A9FE43DFE40222D /* Pods-RaspGameControllerTests */,
+				4B0C74CF85108E32B1802417963FF472 /* Pods-RaspGameControllerUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E2A81DCD253140B4027325F4CBBCC82E /* CocoaMQTT */ = {
+			isa = PBXGroup;
+			children = (
+				34DDC934A3F7E4B3CDD0D5B42BC56468 /* CocoaMQTT.h */,
+				D4DCC7C10BF6ABE4595FECEF73905D24 /* CocoaMQTT.swift */,
+				131A0349B1C3B2FEDF1EC273AD473875 /* CocoaMQTTFrame.swift */,
+				5FE5847EBD3EBDF71B998F819B04FD77 /* CocoaMQTTMessage.swift */,
+				07E650B46517CF0B36A55CFCFC73603B /* Support Files */,
+			);
+			name = CocoaMQTT;
+			path = CocoaMQTT;
+			sourceTree = "<group>";
+		};
+		E57D8BB42B7367E2EA1AB4BAF61E5D44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91BA6F6CCD385509DC9FF3B1ACE3E309 /* CocoaAsyncSocket.framework */,
+				17D5ACE7CDB3B48D9FEAE83E0D1A3A14 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0E09C87625882847EFCEE483C80E1FC1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CAAC56C2AD1DC6E584611FE8336DCC8 /* Pods-RaspGameControllerUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97B0F3BF7590F91108ED9129464E7BE6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92C2A4D6C9CBB3F702D56959F5A9C9A6 /* Pods-RaspGameControllerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D54CF6E33B928DD23F81477E55E43372 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D3AFFD9455296A0F86C0A4F8A4F15A6 /* CocoaMQTT-umbrella.h in Headers */,
+				C9DCA1C1225A5200DCFC358CC5880619 /* CocoaMQTT.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC9DCFD64B7A28CBB46F94230B19AA83 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				56BDE1A4F1F6B17852BE1777028727AA /* Pods-RaspGameController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5BD758EC28E0FD3E8BC2A2CB93A37B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276F082DA0A032AB6F2998B3A8E2FA96 /* CocoaAsyncSocket-umbrella.h in Headers */,
+				84D92FC60D98C077AB3A6D56AEBE8FEB /* GCDAsyncSocket.h in Headers */,
+				946B8DE90A7C6B3872C82AA2AF240118 /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6CA39CAB254055E184AC77DBE49879CC /* Pods-RaspGameControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42406CD4F74B4B124A93BC0264437791 /* Build configuration list for PBXNativeTarget "Pods-RaspGameControllerUITests" */;
+			buildPhases = (
+				0E09C87625882847EFCEE483C80E1FC1 /* Headers */,
+				1C451664E6F75028903401B445534C0F /* Sources */,
+				C863242CE8BDC482042487CB305FA522 /* Frameworks */,
+				A452AC200D927C975DEC5B031FF434D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B508E1699CACB700D27DC5384211131E /* PBXTargetDependency */,
+			);
+			name = "Pods-RaspGameControllerUITests";
+			productName = "Pods-RaspGameControllerUITests";
+			productReference = 62BD9CBB56CF41298903EADC59B6F6C7 /* Pods_RaspGameControllerUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5E3FF8B00DA1B6A865BE32D0DBE2694 /* Pods-RaspGameControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 258888985C95DDD6E1ABAE536D6151DC /* Build configuration list for PBXNativeTarget "Pods-RaspGameControllerTests" */;
+			buildPhases = (
+				97B0F3BF7590F91108ED9129464E7BE6 /* Headers */,
+				EED2D42BAB9047E19B75BA6E608A60ED /* Sources */,
+				42FB5D04B2B93D6D7EE3F3055F74FDDE /* Frameworks */,
+				301988D82782236E40A4DF3ACF6FB62B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B4A7B29C8BD298650FE11E508951178 /* PBXTargetDependency */,
+			);
+			name = "Pods-RaspGameControllerTests";
+			productName = "Pods-RaspGameControllerTests";
+			productReference = 60A37F73C8E37D7DD1C07AFB24F90BFB /* Pods_RaspGameControllerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AE9095FD14D1932558DDD6BDF24B89BD /* Pods-RaspGameController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 768C0F1B25802908AD02887223307340 /* Build configuration list for PBXNativeTarget "Pods-RaspGameController" */;
+			buildPhases = (
+				FC9DCFD64B7A28CBB46F94230B19AA83 /* Headers */,
+				9ED629786CC4F167CBDAAEDDE442599B /* Sources */,
+				2C2B25DACF933765E75AC500E56B6822 /* Frameworks */,
+				F0D47675A54693F52962D3FA0EB5A57D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90FDA80F29B91DA7FA63707D87CA8668 /* PBXTargetDependency */,
+				17EC3116140C24F5FE6C7684A2367D87 /* PBXTargetDependency */,
+			);
+			name = "Pods-RaspGameController";
+			productName = "Pods-RaspGameController";
+			productReference = 2E649F8F490CE0B88421A3A6AE38BEA3 /* Pods_RaspGameController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B683D6AC08CADDB3574C680F1A6DC944 /* CocoaMQTT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBF6CEA6103E1439B62A5D6CC537B8D4 /* Build configuration list for PBXNativeTarget "CocoaMQTT" */;
+			buildPhases = (
+				D54CF6E33B928DD23F81477E55E43372 /* Headers */,
+				214279D152A3A3E4D66BFF477E6034C1 /* Sources */,
+				9B416B84FFA812F8239106CC4FA43593 /* Frameworks */,
+				A27836C8D5AF5A8E4E85C0859F79EF84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CD4253DFB5CC006308302864D2C5C01 /* PBXTargetDependency */,
+			);
+			name = CocoaMQTT;
+			productName = CocoaMQTT;
+			productReference = 6ABF468069B429A4ABDFB35EF126B069 /* CocoaMQTT.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB9F16A11CCB7B75DFD4C14783C83019 /* CocoaAsyncSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB4B18BC646AD400FE52808E62839AB5 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
+			buildPhases = (
+				FD5BD758EC28E0FD3E8BC2A2CB93A37B /* Headers */,
+				B9D0B0602F04A8CCC471C2F11D11E027 /* Sources */,
+				73EDCCE02D9536A6E6AD00154B166BFD /* Frameworks */,
+				3337958E133C08BB64CFD881FEC29B2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaAsyncSocket;
+			productName = CocoaAsyncSocket;
+			productReference = 8E16377E8EEE557AE434431A5A352E65 /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CF9823D7A05F0C9A5DDCB95D374362DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB9F16A11CCB7B75DFD4C14783C83019 /* CocoaAsyncSocket */,
+				B683D6AC08CADDB3574C680F1A6DC944 /* CocoaMQTT */,
+				AE9095FD14D1932558DDD6BDF24B89BD /* Pods-RaspGameController */,
+				A5E3FF8B00DA1B6A865BE32D0DBE2694 /* Pods-RaspGameControllerTests */,
+				6CA39CAB254055E184AC77DBE49879CC /* Pods-RaspGameControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		301988D82782236E40A4DF3ACF6FB62B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3337958E133C08BB64CFD881FEC29B2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A27836C8D5AF5A8E4E85C0859F79EF84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A452AC200D927C975DEC5B031FF434D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D47675A54693F52962D3FA0EB5A57D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C451664E6F75028903401B445534C0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FACC4E3C25E6B3FD33DAD517B7DB0426 /* Pods-RaspGameControllerUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		214279D152A3A3E4D66BFF477E6034C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96369808255736A8D2728D108B5F2295 /* CocoaMQTT-dummy.m in Sources */,
+				E4759585DA56B2C5DCF3D552059DE27B /* CocoaMQTT.swift in Sources */,
+				8644F2D6E29FF585868280E1F7BC3B29 /* CocoaMQTTFrame.swift in Sources */,
+				6941F0AB33237ADB596360C1CB28CAC0 /* CocoaMQTTMessage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9ED629786CC4F167CBDAAEDDE442599B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46B0AA30D7D224DD049414F0E38AE008 /* Pods-RaspGameController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D0B0602F04A8CCC471C2F11D11E027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB100FF9229539CA4094551779BF2BE /* CocoaAsyncSocket-dummy.m in Sources */,
+				AC166C66311BCAAAD1D9289A80E51CCF /* GCDAsyncSocket.m in Sources */,
+				30169A0026017D898DAC180CC3218F79 /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED2D42BAB9047E19B75BA6E608A60ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9087D4FF67472BBFCD8A70F7703A45F7 /* Pods-RaspGameControllerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17EC3116140C24F5FE6C7684A2367D87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaMQTT;
+			target = B683D6AC08CADDB3574C680F1A6DC944 /* CocoaMQTT */;
+			targetProxy = 3679D20BC6F02865EDD7199AFD4B95B8 /* PBXContainerItemProxy */;
+		};
+		3B4A7B29C8BD298650FE11E508951178 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RaspGameController";
+			target = AE9095FD14D1932558DDD6BDF24B89BD /* Pods-RaspGameController */;
+			targetProxy = CD9C470C4866B7813C2A301DF85A346A /* PBXContainerItemProxy */;
+		};
+		7CD4253DFB5CC006308302864D2C5C01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = EB9F16A11CCB7B75DFD4C14783C83019 /* CocoaAsyncSocket */;
+			targetProxy = E13BAC780580FA85005A89EDBD72836C /* PBXContainerItemProxy */;
+		};
+		90FDA80F29B91DA7FA63707D87CA8668 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = EB9F16A11CCB7B75DFD4C14783C83019 /* CocoaAsyncSocket */;
+			targetProxy = 9BE7F7837C9D5700210DF5467DDD061F /* PBXContainerItemProxy */;
+		};
+		B508E1699CACB700D27DC5384211131E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RaspGameController";
+			target = AE9095FD14D1932558DDD6BDF24B89BD /* Pods-RaspGameController */;
+			targetProxy = 14D7E4670AED4698489D9DB13A29D516 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0357BA7C8FA5A675A4859B6FC34940C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 381339F758FF1C3276176BCC94140D40 /* CocoaAsyncSocket.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0AA3B91655AF95B1F49159CD8085CD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1CCFE423EB1A285A2DFB0471DEC4F0C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B665C98B5F72460C8C77FDE80AC4B81 /* Pods-RaspGameControllerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RaspGameControllerUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RaspGameControllerUITests/Pods-RaspGameControllerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6C146DD48BC64E4C8893B95B6B97CDE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29339ED965DECDB56CBCD460A38C846B /* CocoaMQTT.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaMQTT/CocoaMQTT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaMQTT/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaMQTT/CocoaMQTT.modulemap";
+				PRODUCT_MODULE_NAME = CocoaMQTT;
+				PRODUCT_NAME = CocoaMQTT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7A5D44D5ACB927D1D9E6123A0154FDC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36864F8FFFB92E1F8AFD82D6C56263B8 /* Pods-RaspGameControllerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RaspGameControllerUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RaspGameControllerUITests/Pods-RaspGameControllerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8000995DA02063BF3777393CD52061DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		891AC7B85FCA5680359A4614A27F1E11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29339ED965DECDB56CBCD460A38C846B /* CocoaMQTT.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaMQTT/CocoaMQTT-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaMQTT/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaMQTT/CocoaMQTT.modulemap";
+				PRODUCT_MODULE_NAME = CocoaMQTT;
+				PRODUCT_NAME = CocoaMQTT;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		911C4CC3F2C46BD1BCD940CC80351980 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 381339F758FF1C3276176BCC94140D40 /* CocoaAsyncSocket.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A8C317EB953F964D36F6A35754D0A9B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB65575E3A4229525A94FC48E9F09FD /* Pods-RaspGameController.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RaspGameController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RaspGameController/Pods-RaspGameController.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E1C8CBCE6E1392F6989F8F235152BD09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2315C54A267DA29C62E9C753ACC495C9 /* Pods-RaspGameController.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RaspGameController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RaspGameController/Pods-RaspGameController.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E3F9CB70BC56192235532A95184D4E55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FB6296374ADF9654C94BF0EF81E5EE7 /* Pods-RaspGameControllerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RaspGameControllerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RaspGameControllerTests/Pods-RaspGameControllerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E56D19BA23F106F84E0CE01C38BEFC36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E845B252BAF4310ECF9A8F2A2BBF3EB /* Pods-RaspGameControllerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RaspGameControllerTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RaspGameControllerTests/Pods-RaspGameControllerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		258888985C95DDD6E1ABAE536D6151DC /* Build configuration list for PBXNativeTarget "Pods-RaspGameControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3F9CB70BC56192235532A95184D4E55 /* Debug */,
+				E56D19BA23F106F84E0CE01C38BEFC36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA3B91655AF95B1F49159CD8085CD89 /* Debug */,
+				8000995DA02063BF3777393CD52061DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42406CD4F74B4B124A93BC0264437791 /* Build configuration list for PBXNativeTarget "Pods-RaspGameControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A5D44D5ACB927D1D9E6123A0154FDC3 /* Debug */,
+				1CCFE423EB1A285A2DFB0471DEC4F0C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		768C0F1B25802908AD02887223307340 /* Build configuration list for PBXNativeTarget "Pods-RaspGameController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8C317EB953F964D36F6A35754D0A9B5 /* Debug */,
+				E1C8CBCE6E1392F6989F8F235152BD09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBF6CEA6103E1439B62A5D6CC537B8D4 /* Build configuration list for PBXNativeTarget "CocoaMQTT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C146DD48BC64E4C8893B95B6B97CDE2 /* Debug */,
+				891AC7B85FCA5680359A4614A27F1E11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB4B18BC646AD400FE52808E62839AB5 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				911C4CC3F2C46BD1BCD940CC80351980 /* Debug */,
+				0357BA7C8FA5A675A4859B6FC34940C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
