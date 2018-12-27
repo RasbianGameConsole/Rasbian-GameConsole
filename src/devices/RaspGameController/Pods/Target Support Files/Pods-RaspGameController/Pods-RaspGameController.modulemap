@@ -1,0 +1,6 @@
+framework module Pods_RaspGameController {
+  umbrella header "Pods-RaspGameController-umbrella.h"
+
+  export *
+  module * { export * }
+}
