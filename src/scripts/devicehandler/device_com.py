@@ -4,21 +4,23 @@ import os
 import paho.mqtt.client as mqtt
 
 clientName = "PiGConsole"
-piIP = "the pi ip address"
+piIP = "10.0.0.99"
 
 mqttClient = mqtt.Client(clientName)
+
+def connectionStatus(client, userData, err):
+    print("connected!")
+    mqttClient.subscribe("PICONSOLE")
+
+def messageDecoder(client, userData, msg):
+    print(str(msg.topic))
+    print(str(msg.payload))
+    
 
 mqttClient.on_connect = connectionStatus
 mqttClient.on_message = messageDecoder
 
-def connectionStatus():
-    print("connected!")
-
-def messageDecoder(client, userData, msg):
-    print(str(msg.payload))    
-
 
 mqttClient.connect(piIP, 1883, 60)
 mqttClient.loop_forever()
-
 

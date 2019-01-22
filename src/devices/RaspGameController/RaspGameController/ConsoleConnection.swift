@@ -49,7 +49,7 @@ class ConsoleConnection : CocoaMQTTDelegate {
         if(MQTTClient?.connect() == false){
             throw NSError(domain: "Cannot Connect to Device", code: 1, userInfo: nil)
         }
-        let connectMsg = CocoaMQTTMessage(topic: "CONNECT", string: (UIDevice.current.identifierForVendor?.uuidString)!)
+        let connectMsg = CocoaMQTTMessage(topic: "PICONSOLE", string: (UIDevice.current.identifierForVendor?.uuidString)!)
         self.MQTTClient?.publish(connectMsg)
         self.connected = true
         
@@ -89,7 +89,7 @@ class ConsoleConnection : CocoaMQTTDelegate {
         return self.players!
     }
     
-    // DELEGATE PROTOCOL METHODS============================================
+    // DELEGATE PROTOCOL METHODS=====================================
     
     func mqtt(_ mqtt: CocoaMQTT, didConnectAck ack: CocoaMQTTConnAck) {
         self.MQTTClient?.subscribe(self.connectionTopic)
@@ -98,7 +98,7 @@ class ConsoleConnection : CocoaMQTTDelegate {
     
     func mqtt(_ mqtt: CocoaMQTT, didPublishMessage message: CocoaMQTTMessage, id: UInt16) {
         print("published")
-        print(message.string)
+        print(message.string!)
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didPublishAck id: UInt16) {
