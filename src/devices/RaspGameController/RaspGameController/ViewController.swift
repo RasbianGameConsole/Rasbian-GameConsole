@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     
     func findBtn() -> UIButton{
         let  rect = CGRect(x: 100, y: 250, width: 100, height: 200)
-        let btn = UIButton(frame: rect)
+        let btn = GameButton(frame: rect, functionality: "up", playerNum: 1)
         btn.backgroundColor = .red
         btn.setTitle("find/unfind pi", for: .normal)
         btn.addTarget(self, action: #selector(callback), for: .touchUpInside)

@@ -15,17 +15,22 @@ class GameButton: UIButton {
     var playerNumber : Int = 0
     var mqtt = ConsoleConnection.shared()
     var buttonFunction : String!
+    var callback : ()->Void
     static var keyDictionary : Dictionary<String,(String,String)> = ["up" : ("kd up","ku up"),
                                                                      "down": ("kd dn","ku dn"),
                                                                      "left": ("kd lt","ku lt"),
                                                                      "right": ("kd rt","ku rt"),]
     init(frame: CGRect,functionality: String!, playerNum: Int){
+        self.callback = {()->Void in
+        }
         super.init(frame: frame)
         self.buttonFunction = self.setFunctionality(functionality: functionality);
         self.playerNumber = playerNum
     }
     
     override init(frame: CGRect){
+        self.callback = {()->Void in
+        }
         super.init(frame: frame);
         self.buttonFunction = self.setFunctionality(functionality: "WILL RETURN AND SET TO 'UP' BY DEFAULT")
     }
@@ -41,19 +46,19 @@ class GameButton: UIButton {
         return "up"
     }
     
-    private func setEventHandlers(){
-        //TODO: INTERNET SAYS THIS METHOD OF PRESS AND HOLD EVENTS HAS BUGS FIGURE OUT A BETTER WAY
-        self.addTarget(self, action: #selector(whenHolding), for: .touchDown)
-        self.addTarget(self, action: #selector(whenReleased), for: .touchUpInside)
+    public func onPress(function: @escaping ()->Void){
+        self.callback = function
     }
     
-    @objc private func whenHolding(){
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let sendStr : (String,String)! = GameButton.keyDictionary[self.buttonFunction]
         mqtt.publishData(topic: String(self.playerNumber), data: sendStr.0)
+        self.callback()
     }
     
-    @objc private func whenReleased(){
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         let sendStr : (String,String)! = GameButton.keyDictionary[self.buttonFunction]
         mqtt.publishData(topic: String(self.playerNumber), data: sendStr.1)
+        self.callback()
     }
 }
