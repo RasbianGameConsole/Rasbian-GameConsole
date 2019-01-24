@@ -12,18 +12,15 @@ import Foundation
 
 class ViewController: UIViewController {
 
-    var mqttClient : ConsoleConnection? = nil
+
     var label : UILabel? = nil
     static var incr : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let phoneID = UIDevice.current.identifierForVendor?.uuidString
-        self.mqttClient = ConsoleConnection.shared()
         self.label = textView(txt: "finding...")
         let btn : UIButton = findBtn()
-        
-        self.view.addSubview(btn)
         self.view.backgroundColor = UIColor.green
     }
     
@@ -40,15 +37,16 @@ class ViewController: UIViewController {
         let btn = GameButton(frame: rect, functionality: "up", playerNum: 1)
         btn.backgroundColor = .red
         btn.setTitle("find/unfind pi", for: .normal)
-        btn.addTarget(self, action: #selector(callback), for: .touchUpInside)
+        btn.onPress(function: self.myCustomCallback)
+        self.view.addSubview(btn)
         return btn
     }
     
-    @objc func callback(){
-        label?.text = String(ViewController.incr)
-        self.mqttClient?.publishData(topic: "TEST", data: (label?.text)!)
-       ViewController.incr += 1
+   public func myCustomCallback()->Void {
+        ViewController.incr += 1
+        self.label?.text = "button pressed\(ViewController.incr) times"
     }
+ 
     
     
 
