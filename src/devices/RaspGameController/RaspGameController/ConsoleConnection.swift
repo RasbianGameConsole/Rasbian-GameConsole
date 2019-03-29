@@ -35,9 +35,10 @@ class ConsoleConnection : CocoaMQTTDelegate {
     
     private init(){
         let phoneID =  UIDevice.current.identifierForVendor?.uuidString
-        self.MQTTClient = CocoaMQTT(clientID: phoneID!, host: "PI IP address", port: 1883)
+        self.MQTTClient = CocoaMQTT(clientID: phoneID!, host: "169.254.61.217", port: 1883)
         self.MQTTClient?.delegate = self
         do {
+            print("trying to connect")
             try self.connect()
         } catch let err as NSError? {
             print(err?.domain as Any) // TODO: REPLACE PRINT STATEMENTS WITH USER USEFUL ERROR HANDLING
