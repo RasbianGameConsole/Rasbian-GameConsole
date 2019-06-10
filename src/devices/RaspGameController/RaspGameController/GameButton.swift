@@ -19,7 +19,11 @@ class GameButton: UIButton {
     static var keyDictionary : Dictionary<String,(String,String)> = ["up" : ("kd up","ku up"),
                                                                      "down": ("kd dn","ku dn"),
                                                                      "left": ("kd lt","ku lt"),
-                                                                     "right": ("kd rt","ku rt"),]
+                                                                     "right": ("kd rt","ku rt"),
+                                                                     "a":("kd a","ku a"),
+                                                                     "b":("kd b","ku b"),
+                                                                     "x":("kd x","ku x"),
+                                                                     "y":("kd y","ku y"),]
     init(frame: CGRect,functionality: String!, playerNum: Int){
         self.callback = {()->Void in
         }
