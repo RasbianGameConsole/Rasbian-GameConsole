@@ -52,12 +52,12 @@ class GameButton: UIButton {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let sendStr : (String,String)! = GameButton.keyDictionary[self.buttonFunction]
-        mqtt.publishData(topic: String(self.playerNumber), data: sendStr.0)
+        mqtt.publishData(topic: "PICONSOLE", data: sendStr.0)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         let sendStr : (String,String)! = GameButton.keyDictionary[self.buttonFunction]
-        mqtt.publishData(topic: String(self.playerNumber), data: sendStr.1)
+        mqtt.publishData(topic: "PICONSOLE", data: sendStr.1)
         self.callback()
     }
 }
