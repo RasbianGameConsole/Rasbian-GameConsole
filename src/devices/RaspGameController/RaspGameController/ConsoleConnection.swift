@@ -27,7 +27,7 @@ class ConsoleConnection : CocoaMQTTDelegate {
     
     private var MQTTClient : CocoaMQTT? = nil
     private var connected : Bool = false
-    private var connectionTopic : String = "CONNECT"
+    private var connectionTopic : String = "PICONSOLE"
     private var currentData : String? = nil
     private var players : [Int]? = nil
     
@@ -35,7 +35,7 @@ class ConsoleConnection : CocoaMQTTDelegate {
     
     private init(){
         let phoneID =  UIDevice.current.identifierForVendor?.uuidString
-        self.MQTTClient = CocoaMQTT(clientID: phoneID!, host: "169.254.61.217", port: 1883)
+        self.MQTTClient = CocoaMQTT(clientID: phoneID!, host: "raspberrypi.local", port: 1883)
         self.MQTTClient?.delegate = self
         do {
             print("trying to connect")
@@ -51,7 +51,7 @@ class ConsoleConnection : CocoaMQTTDelegate {
             throw NSError(domain: "Cannot Connect to Device", code: 1, userInfo: nil)
         }
         let connectMsg = CocoaMQTTMessage(topic: "PICONSOLE", string: (UIDevice.current.identifierForVendor?.uuidString)!)
-        self.MQTTClient?.publish(connectMsg)
+
         self.connected = true
         
         return nil
@@ -103,15 +103,12 @@ class ConsoleConnection : CocoaMQTTDelegate {
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didPublishAck id: UInt16) {
-        
+        print("published")
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didReceiveMessage message: CocoaMQTTMessage, id: UInt16) {
-        if(message.topic == "CONNECT"){
-            availablePlayerSlots(slots: message.string!)
-        }else{
-            self.getData(data: message.string!)
-        }
+        print("Received message")
+        print(message.payload)
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didSubscribeTopic topic: String) {

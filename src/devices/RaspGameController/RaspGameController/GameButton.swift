@@ -19,7 +19,11 @@ class GameButton: UIButton {
     static var keyDictionary : Dictionary<String,(String,String)> = ["up" : ("kd up","ku up"),
                                                                      "down": ("kd dn","ku dn"),
                                                                      "left": ("kd lt","ku lt"),
-                                                                     "right": ("kd rt","ku rt"),]
+                                                                     "right": ("kd rt","ku rt"),
+                                                                     "a":("kd a","ku a"),
+                                                                     "b":("kd b","ku b"),
+                                                                     "x":("kd x","ku x"),
+                                                                     "y":("kd y","ku y"),]
     init(frame: CGRect,functionality: String!, playerNum: Int){
         self.callback = {()->Void in
         }
@@ -52,12 +56,12 @@ class GameButton: UIButton {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let sendStr : (String,String)! = GameButton.keyDictionary[self.buttonFunction]
-        mqtt.publishData(topic: String(self.playerNumber), data: sendStr.0)
+        mqtt.publishData(topic: "PICONSOLE", data: sendStr.0)
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         let sendStr : (String,String)! = GameButton.keyDictionary[self.buttonFunction]
-        mqtt.publishData(topic: String(self.playerNumber), data: sendStr.1)
+        mqtt.publishData(topic: "PICONSOLE", data: sendStr.1)
         self.callback()
     }
 }
