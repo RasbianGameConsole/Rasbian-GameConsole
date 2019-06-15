@@ -1,0 +1,26 @@
+I'm assuming it's really up in the air as to what kind of games there will/should be included in this console.
+
+Granted, if we want to include various emulators, we're going to need to run some kind of supported OS for this system, I suggest
+  a lightweight Linux distro like Mint or Ubuntu(barebones) but either way we might be able to have our console boot off of various
+  portable harddrives that include all the different kinds of games we want.
+
+I'm also apart of a group called Xenia that's working on an XBOX 360 Emulator (granted you need to do the game reading yourself)
+  I think it would be a good idea to include the option for various emulators on this console, I didn't attend the previous meeting,
+  so I'm not aware of what's being planned on implemented into this but I think the backend should be able to autoexec a GUI of various
+  dirs/console emulators.
+  
+Here's the link to some of the emulators I had in mind:
+
+Xenia - XBOX 360: 
+  discord - https://discordapp.com/invite/Q9mxZf9
+  subreddit - /r/xenia/
+  github project - ~.com/xenia-project/xenia
+  
+Citrus - 3DS Emulator
+  info and discord - https://citra-emu.org/discord/
+  
+Visual Boy Advance - GBA Emulator
+  main site - http://www.emulator-zone.com/doc.php/gba/vboyadvance.html
+  
+That last link has a site to Emulator Zone which I don't have much time/experience in, 
+  but if it peaks your fancy you can always peruse it
