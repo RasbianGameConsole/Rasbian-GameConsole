@@ -11,29 +11,39 @@ piIP = "raspberrypi.local"
 
 #/home/pi/Documents/client
 
-log_file = open('logfile.txt','a')
+key_map = {
+#TODO: build this map from input file
+        'up' : 'up',
+        'dn' : 'down',
+        'lt' : 'left',
+        'rt' : 'right',
+        'a' : 's',
+        'b' : 'a',
+        'x' : 'd',
+        'y' : 'w'
+}
+
+def key_event(command):
+        if command[0] == 'kd':
+                keyboard.press(key_map[command[1]])
+        else:
+                keyboard.release(key_map(command[1]))
 
 def connect_callback(client, userdata, flags, rc):
     print("connected!")
     client.subscribe("PICONSOLE")
-    log_file.write("connected" + "    " + datetime.datetime.now)
     
 def on_message_callback(client, userdata, msg):
-    print("Received")
-    print(str(msg.topic))
-    print(str(msg.payload))
-    log_file.write(str(msg.payload) + "   " + datetime.datetime.now)
-
-def continuous_pub(x=5):
-        mqttClient.publish('PICONSOLE',"From Console",0,False)
-
+        command = str(msg.payload).split(' ')
+        key_event(command)
+        
+    
         
 mqttClient = mqtt.Client(clientName) 
 mqttClient.on_connect = connect_callback
 mqttClient.on_message = on_message_callback
 mqttClient.connect(piIP, 1883, 60)
 mqttClient.loop_forever()
-continuous_pub(10)  
 
 
 
